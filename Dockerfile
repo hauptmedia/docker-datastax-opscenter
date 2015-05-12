@@ -5,7 +5,7 @@ ENV		DEBIAN_FRONTEND noninteractive
 
 # install required packges
 RUN	apt-get update -qq && \
-	apt-get install -y python2.7 openssl python-openssl && \
+	apt-get install -y python2.7 openssl python-openssl curl && \
 	apt-get clean autoclean && \
 	apt-get autoremove --yes && \
 	rm -rf /var/lib/{apt,dpkg,cache,log}/
