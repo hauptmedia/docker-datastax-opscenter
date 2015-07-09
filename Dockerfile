@@ -19,6 +19,8 @@ RUN	mkdir -p ${OPSCENTER_HOME} && \
 
 WORKDIR ${OPSCENTER_HOME}
 
+COPY opscenterd.conf /opt/opscenter/conf/opscenterd.conf
+
 # OpsCenter ports:
 # 8888   OpsCenter website
 # 50031  OpsCenter HTTP proxy for Job Tracker (enterprise only)
