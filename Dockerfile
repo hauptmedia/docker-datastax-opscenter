@@ -11,7 +11,7 @@ RUN	apt-get update -qq && \
 	rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 ENV	OPSCENTER_HOME /opt/opscenter
-ENV	OPSCENTER_VERSION 5.2.0
+ENV	OPSCENTER_VERSION 5.2.1
 ENV	OPSCENTER_DOWNLOAD_URL http://downloads.datastax.com/community/opscenter-${OPSCENTER_VERSION}.tar.gz
 
 RUN	mkdir -p ${OPSCENTER_HOME} && \
